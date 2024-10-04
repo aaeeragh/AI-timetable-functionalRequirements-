@@ -43,7 +43,8 @@ This project is developed by:
 
 - **Aaditya R Trivedi**
 - **Anurag Patel**
-- **Adya Mevania**
+- **Adya**
+- **Mevania**
 - **Deepak**
 
 We are a team of dedicated students working on this project as part of our Software Engineering Lab at VIT-AP University.
