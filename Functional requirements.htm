@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Requirements - Automatic Timetable Generation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Automatic Timetable Generation System</h1>
+</header>
+
+<section>
+    <h2>Functional Requirements</h2>
+    <p>This system automates the creation of academic timetables, ensuring conflict-free schedules for students, professors, and rooms. Below are the core functional requirements:</p>
+
+    <h3>1. User Authentication</h3>
+    <ul>
+        <li><strong>Requirement:</strong> Only authorized personnel (admin, faculty) can access the timetable generation features.</li>
+        <li><strong>Description:</strong> Secure login mechanisms will be implemented to ensure only valid users can generate or edit timetables.</li>
+        <li><strong>Process Flow:</strong> User enters credentials → System validates → Access granted on successful validation.</li>
+    </ul>
+
+    <h3>2. Input Subject and Staff Information</h3>
+    <ul>
+        <li><strong>Requirement:</strong> The admin must input details about subjects, faculty, and classrooms.</li>
+        <li><strong>Description:</strong> The system will require detailed information about subjects, faculty availability, and classroom resources.</li>
+        <li><strong>Process Flow:</strong> Data entered → System stores subject, faculty, and room info.</li>
+    </ul>
+
+    <h3>3. Input Constraints</h3>
+    <ul>
+        <li><strong>Requirement:</strong> Faculty members and rooms may have availability constraints that must be considered.</li>
+        <li><strong>Description:</strong> Constraints like unavailable time slots or room bookings must be entered into the system.</li>
+        <li><strong>Process Flow:</strong> User specifies constraints → System respects constraints during timetable generation.</li>
+    </ul>
+
+    <h3>4. Generate Timetable</h3>
+    <ul>
+        <li><strong>Requirement:</strong> The system automatically generates a conflict-free timetable.</li>
+        <li><strong>Description:</strong> Based on inputs and constraints, the system generates a draft timetable.</li>
+        <li><strong>Process Flow:</strong> User requests generation → System processes → Draft timetable created.</li>
+    </ul>
+
+    <h3>5. Timetable Review and Editing</h3>
+    <ul>
+        <li><strong>Requirement:</strong> The generated timetable can be reviewed and manually adjusted by the admin.</li>
+        <li><strong>Description:</strong> Minor edits to the draft timetable can be made for optimization.</li>
+        <li><strong>Process Flow:</strong> Review draft → Manual edits → Save and publish final timetable.</li>
+    </ul>
+
+    <h3>6. Publish Timetable</h3>
+    <ul>
+        <li><strong>Requirement:</strong> The timetable will be accessible to students and faculty after publishing.</li>
+        <li><strong>Description:</strong> The finalized timetable is published on a web interface for students and staff to view.</li>
+        <li><strong>Process Flow:</strong> Admin publishes → Timetable available for users.</li>
+    </ul>
+</section>
+
+</body>
+</html>
